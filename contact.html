@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>LUMINA CREATIVE</title>
+  <meta name="description" content="WithCodeの卒業テストの課題です。">
+  <meta name="keywords" content="IT,プログラミング,">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- OGP -->
+  <meta property="og:url" content="本番環境URL">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="-CONTACT-LUMINA CREATIVE">
+  <meta property="og:description" content="WithCodeの卒業テストの課題です。">
+  <meta property="og:site_name" content="LUMINA CREATIVE">
+  <meta property="og:image" content="本番環境URL/img/logo.png">
+  <!-- ICON -->
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180×180" href="本番環境URL/img/logo.png">
+  <!--googleFonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="css/common-main.css">
+  <link rel="stylesheet" type="text/css" href="css/common-sub.css">
+  <link rel="stylesheet" type="text/css" href="css/contact.css">
+</head>
+
+<body>
+
+  <header class="header" id="header">
+    <div class="header-wrap">
+      <div class="header-wrap__logo">
+        <a href="index.html" class="header-wrap-logo">LUMINA<br>CREATIVE</a>
+      </div>
+      <nav class="header-wrap__nav">
+        <ul class="header-wrap__nav__list">
+          <li class="header-wrap__nav__list__item">
+            <a href="about.html">ABOUT</a>
+          </li>
+          <li class="header-wrap__nav__list__item">
+            <a href="service.html">SERVICE</a>
+          </li>
+          <li class="header-wrap__nav__list__item">
+            <a href="works.html">WORKS</a>
+          </li>
+          <li class="header-wrap__nav__list__item">
+            <a href="interviews.html">INTERVIEWS</a>
+          </li>
+          <li class="header-wrap__nav__list__item">
+            <a href="news.html">NEWS</a>
+          </li>
+        </ul>
+        <div class="header-wrap__nav__button">
+          <a href="contact.html">CONTACT</a>
+        </div>
+      </nav>
+      <div class="h-open">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="h-nav">
+        <a href="index.html" class="h-nav__logo">LUMINA<br>CREATIVE</a>
+        <div id="h-nav__list">
+          <ul>
+            <li>
+              <a href="about.html">ABOUT</a>
+            </li>
+            <li>
+              <a href="service.html">SERVICE</a>
+            </li>
+            <li>
+              <a href="works.html">WORKS</a>
+            </li>
+            <li>
+              <a href="interviews.html">INTERVIEWS</a>
+            </li>
+            <li>
+              <a href="news.html">NEWS</a>
+            </li>
+          </ul>
+        </div>
+        <div class="h-nav__button">
+          <a href="contact.html">CONTACT</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="top">
+      <h2>CONTACT</h2>
+      <p class="top__message">お気軽にお問い合わせください</p>
+    </div>
+
+    <section class="breadcrumb" id="breadcrumb">
+      <div class="breadcrumb-wrapper">
+        <ul class="breadcrumb-wrapper__list">
+          <li class="breadcrumb-wrapper__list__item ">
+            <a href="../index.html"><span>HOME</span></a>
+          </li>
+          <li class="breadcrumb-wrapper__list__item">
+            <a href="contact.html"><span class="b-color">CONTACT</span></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="con">
+      <div class="section-wrap con__wrap">
+        <p class="contact__text">サービスに関するご質問やご相談は、こちらからお気軽にお問い合わせください</p>
+        <div class="contact__form">
+          <form action="../mail.php" method="post" class="contact-form" id="form">
+            <div class="contact-form__row">
+              <div class="contact-form__label">
+                <label for="name" class="is-required">お名前</label>
+              </div>
+              <div class="contact-form__input">
+                <input id="name" type="text" placeholder="山田　太郎">
+              </div>
+            </div>
+            <div class="contact-form__row">
+              <div class="contact-form__label">
+                <label for="name">フリガナ</label>
+              </div>
+              <div class="contact-form__input">
+                <input id="name" type="text" placeholder="ヤマダ　タロウ">
+              </div>
+            </div>
+            <div class="contact-form__row">
+              <div class="contact-form__label">
+                <label for="name">会社名</label>
+              </div>
+              <div class="contact-form__input contact-age">
+                <input id="name" type="text" placeholder="山田株式会社">
+              </div>
+            </div>
+            <div class="contact-form__row">
+              <div class="contact-form__label">
+                <label for="email" class="is-required">メールアドレス</label>
+              </div>
+              <div class="contact-form__input">
+                <input id="email" type="email" placeholder="info@xx.jp">
+              </div>
+            </div>
+            <div class="contact-form__row">
+              <div class="contact-form__label">
+                <label for="tel" class="is-required">電話番号</label>
+              </div>
+              <div class="contact-form__input">
+                <input id="tel" type="tel" placeholder="00-0000-0000">
+              </div>
+            </div>
+            <div class="contact-form__row">
+              <div class="contact-form__label">
+                <label for="kind" class="is-required">お問い合わせ種別</label>
+              </div>
+              <div class="contact-form__input contact-form-select">
+                <select name="お問い合わせ種別" id="kind">
+                  <option value="プルダウンメニューで問い合わせ内容を選択" selected disabled hidden>選択してください</option>
+                  <option value="Web制作">Web制作</option>
+                  <option value="ブランディング">ブランディング</option>
+                  <option value="グラフィックデザイン">グラフィックデザイン</option>
+                  <option value="映像制作">映像制作</option>
+                  <option value="システム開発">システム開発</option>
+                </select>
+              </div>
+            </div>
+            <div class="contact-form__row">
+              <div class="contact-form__label">
+                <label for="message">お問い合わせ内容</label>
+              </div>
+              <div class="contact-form__input-textarea">
+                <textarea name="message" id="message" placeholder="お問い合わせを入力してください"></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="contact__btn">
+          <button type="submit" form="form" class="contact-btn">送信する</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-wrap">
+      <div class="footer__logo">
+        <a href="index.html" class="footer-logo">LUMINA<br>CREATIVE</a>
+      </div>
+      <nav class="footer__nav">
+        <ul class="footer__links">
+          <li class="footer__link">
+            <a href="about.html">ABOUT</a>
+          </li>
+          <li class="footer__link">
+            <a href="service.html">SERVICE</a>
+          </li>
+          <li class="footer__link">
+            <a href="works.html">WORKS</a>
+          </li>
+          <li class="footer__link">
+            <a href="interviews.html">INTERVIEWS</a>
+          </li>
+          <li class="footer__link">
+            <a href="news.html">NEWS</a>
+          </li>
+          <li class="footer__link-btn">
+            <a href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy;LUMINA CREATIVE</p>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>

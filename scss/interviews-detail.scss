@@ -1,0 +1,196 @@
+@use "color";
+@use "breakpoints";
+
+$font-jp: "Noto Sans JP", sans-serif;
+$font-en: "Roboto", sans-serif;
+$font-logo: "Josefin Sans", sans-serif;
+
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+/*interviews-detail*/
+.interviews--detail {
+
+}
+.interviews-detail__inner {
+
+}
+.interviews-detail__item {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    @include breakpoints.mq(tb) {
+        display: block;
+    }
+
+    @include breakpoints.mq(sp) {
+        display: block;
+    }
+}
+.interviews-detail__image-pc {
+    width: 400px;
+    height: 300px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+    @include breakpoints.mq(tb) {
+        display: none;
+
+    }
+
+    @include breakpoints.mq(sp) {
+        display: none;
+    }
+}
+.interviews-detail__image-nopc {
+    display: none;
+    width: 400px;
+    height: 300px;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+        object-position: center 0;
+    }
+
+    @include breakpoints.mq(tb) {
+        display: block;
+    }
+
+    @include breakpoints.mq(sp) {
+        display: block;
+        width: 100%;
+        height: clamp(9.375rem, 2.677rem + 33.49vw, 18.75rem);
+        margin-top: clamp(1.875rem, 1.428rem + 2.23vw, 2.5rem);
+    }
+}
+.interviews-detail__contents {
+    width: calc(500 / 1024 * 100%);
+
+    @include breakpoints.mq(tb) {
+        width: 100%;
+    }
+
+    @include breakpoints.mq(sp) {
+        width: 100%;
+    }
+}
+.interviews-detail__name {
+
+}
+.interviews-detail-name {
+    display: inline-block;
+    position: relative;
+    padding-right: 55px;
+    font-size: 36px;
+    font-weight: $font-weight-bold;
+
+    &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 55%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 5px;
+        background-color: color.$accent-color;
+        border-radius: 5px;
+    }
+
+    @include breakpoints.mq(tb) {
+
+    }
+
+    @include breakpoints.mq(sp) {
+        padding-right: clamp(1.875rem, 0.759rem + 5.58vw, 3.438rem);
+        font-size: clamp(1.25rem, 0.536rem + 3.57vw, 2.25rem);
+
+        &::after {
+            width: clamp(1.25rem, 0.357rem + 4.47vw, 2.5rem);
+            height: clamp(0.125rem, -0.009rem + 0.67vw, 0.313rem);
+        }
+    }
+}
+.interviews-detail__position {
+    color: color.$accent-color;
+    font-size: 24px;
+    font-weight: $font-weight-bold;
+    line-height: 1.5;
+
+    @include breakpoints.mq(tb) {
+        font-size: 16px;
+    }
+
+    @include breakpoints.mq(sp) {
+        font-size: clamp(0.75rem, 0.571rem + 0.89vw, 1rem);
+    }
+}
+.interviews-detail__message {
+    margin-top: 30px;
+
+    @include breakpoints.mq(tb) {
+        width: 400px;
+        margin-top: 40px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @include breakpoints.mq(sp) {
+        margin-top: clamp(1.875rem, 1.428rem + 2.23vw, 2.5rem);
+    }
+}
+.interviews-detail-message__title {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: $font-weight-bold;
+
+    @include breakpoints.mq(sp) {
+        font-size: clamp(1rem, 0.643rem + 1.79vw, 1.5rem);
+    }
+}
+.interviews-detail__text {
+    margin-top: 30px;
+    line-height: 32px;
+
+    @include breakpoints.mq(tb) {
+        margin-top: 25px;
+    }
+
+    @include breakpoints.mq(sp) {
+        margin-top: clamp(1.25rem, 0.803rem + 2.24vw, 1.875rem);
+        font-size: clamp(1rem, 0.821rem + 0.89vw, 1.25rem);
+        line-height: clamp(1.5rem, 1.142rem + 1.79vw, 2rem);
+    }
+
+    p {
+
+        &:not(:first-child) {
+            margin-top: 20px;
+
+            @include breakpoints.mq(tb) {
+                margin-top: 15px;
+            }
+
+            @include breakpoints.mq(sp) {
+                margin-top: clamp(0.625rem, 0.268rem + 1.79vw, 1.25rem);
+            }
+        }
+    }
+}
+
+.interviews__btn {
+    margin-top: 30px;
+}

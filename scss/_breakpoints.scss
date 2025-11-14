@@ -1,0 +1,14 @@
+// ブレークポイントとmixin
+@use "sass:map";
+
+$breakpoints: (
+  "sp": "screen and (max-width: 767.9px)",
+  "tb": "screen and (min-width: 768px) and (max-width: 1023.9px)",
+  "pc": "screen and (min-width: 1024px)",
+) !default;
+
+@mixin mq($breakpoint: pc) {
+  @media #{map.get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

@@ -1,0 +1,315 @@
+@use "color";
+@use "breakpoints";
+
+$font-jp: "Noto Sans JP", sans-serif;
+$font-en: "Roboto", sans-serif;
+$font-logo: "Josefin Sans", sans-serif;
+
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+/*service*/
+.service {
+
+}
+.service__items {
+
+}
+.service__item {
+    width: 100%;
+
+    &:not(:first-child) {
+        margin-top: 116px;
+    }
+
+    &:nth-child(odd) {
+
+        .service-item__up {
+            flex-direction: row-reverse;
+
+            .service-item__contents {
+                margin-left: auto;
+            }
+        }
+    }
+
+    &:nth-child(even) {
+
+        .service-item__up {
+            flex-direction: reverse;
+
+            .service-item__contents {
+                margin-right: auto;
+            }
+        }
+    }
+
+    @include breakpoints.mq(tb) {
+    }
+
+    @include breakpoints.mq(sp) {
+
+        &:nth-child(odd) {
+
+            .service-item__contents {
+                margin-left: 0;
+            }
+        }
+
+        &:nth-child(even) {
+
+            .service-item__contents {
+                margin-right: 0;
+            }
+        }
+
+        &:not(:first-child) {
+            margin-top: 54px;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+}
+.service-item__up {
+
+    @include breakpoints.mq(pc) {
+        display: flex;
+    }
+
+    @include breakpoints.mq(tb) {
+        display: block;
+    }
+
+    @include breakpoints.mq(sp) {
+        display: block;
+    }
+}
+
+.service-item__contents {
+    width: calc(100% - 450px - 60px);
+
+    @include breakpoints.mq(tb) {
+        width: 100%;
+    }
+
+    @include breakpoints.mq(sp) {
+        width: 100%;
+    }
+}
+.service-item__title {
+    display: inline-block;
+    position: relative;
+    padding-right: 55px;
+    font-size: 36px;
+    font-weight: $font-weight-bold;
+
+    &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 55%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 5px;
+        background-color: color.$accent-color;
+        border-radius: 5px;
+    }
+
+    @include breakpoints.mq(tb) {
+
+    }
+
+    @include breakpoints.mq(sp) {
+        padding-right: clamp(1.875rem, 0.759rem + 5.58vw, 3.438rem);
+        font-size: clamp(1.25rem, 0.536rem + 3.57vw, 2.25rem);
+
+        &::after {
+            width: clamp(1.25rem, 0.357rem + 4.47vw, 2.5rem);
+            height: clamp(0.125rem, -0.009rem + 0.67vw, 0.313rem);
+        }
+    }
+}
+.service-item__text {
+    margin-top: 33px;
+    font-size: 16px;
+    line-height: 1.5;
+
+    @include breakpoints.mq(tb) {
+        width: 500px;
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @include breakpoints.mq(sp) {
+        width: 100%;
+        margin-top: clamp(1.25rem, 0.803rem + 2.23vw, 1.875rem);
+    }
+}
+.service-item__image {
+    width: 450px;
+    height: 300px;
+    border-radius: 8px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @include breakpoints.mq(tb) {
+        width: 500px;
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @include breakpoints.mq(sp) {
+        width: clamp(18.125rem, 8.748rem + 46.89vw, 31.25rem);
+        height: clamp(9.375rem, 2.677rem + 33.49vw, 18.75rem);
+        margin-top: clamp(1.25rem, 0.803rem + 2.23vw, 1.875rem);
+    }
+}
+.service-item__down {
+    width: 100%;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include breakpoints.mq(pc) {
+        display: flex;
+        justify-content: space-between;
+        max-width: 850px;
+    }
+
+    @include breakpoints.mq(tb) {
+        width: 500px;
+        margin-top: clamp(1.875rem, -1.876rem + 7.82vw, 3.125rem);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @include breakpoints.mq(sp) {
+        margin-top: clamp(1.25rem, 0.803rem + 2.23vw, 1.875rem);
+    }
+}
+.service-item__desc {
+    width: calc(50% - 30px);
+
+    @include breakpoints.mq(tb) {
+        width: 100%;
+    }
+
+    @include breakpoints.mq(sp) {
+        width: 100%;
+    }
+}
+.service-item-desc__title {
+    position: relative;
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: $font-weight-bold;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 10px;
+        height: 10px;
+        background-color: color.$accent-color;
+    }
+
+    @include breakpoints.mq(sp) {
+        font-size: 16px;
+    }
+}
+.service-item-desc__text {
+
+    p {
+        position: relative;
+        display: block;
+        margin-top: 10px;
+        padding-left: 15px;
+        line-height: 1.5;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            margin-top: 8px;
+            background-image: url(../img/チェックマーク.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+.service-item__flow {
+    width: calc(50% - 30px);
+
+    @include breakpoints.mq(tb) {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    @include breakpoints.mq(sp) {
+        width: 100%;
+        margin-top: clamp(1.25rem, 0.803rem + 2.23vw, 1.875rem);
+    }
+}
+.service-item-flow__title {
+    position: relative;
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: $font-weight-bold;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 10px;
+        height: 10px;
+        background-color: color.$accent-color;
+    }
+
+    @include breakpoints.mq(sp) {
+        font-size: 16px;
+    }
+}
+.service-item-flow__text {
+
+    ol {
+        counter-reset: listnum;
+        /* カウンターをリセット */
+        list-style: none;
+        /* 標準のスタイルは消す */
+
+        li {
+            display: block;
+            margin-top: 10px;
+            line-height: 1.5;
+
+            &::before {
+                counter-increment: listnum;
+                content: counter(listnum) ".";
+                /* 半角スペースを入れて""の中にピリオドを追加 */
+                margin-right: 5px;
+                color: color.$accent-color;
+                font-weight: $font-weight-bold;                }
+        }
+    }
+}
+.service__btn {
+    margin-top: 25px;
+}
