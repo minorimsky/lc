@@ -82,17 +82,13 @@ $font-weight-bold: 700;
     }
 }
 
-.news-item__tag {
+.news-item__date {
     display: inline-block;
-    padding: 6px 10px;
-    background-color: color.$accent-color;
-    border-radius: 8px;
-    color: #fff;
+    color: #333;
     font-size: 14px;
     line-height: 1;
 
     @include breakpoints.mq(tb) {
-        padding: clamp(0.313rem, 0.125rem + 0.39vw, 0.375rem) clamp(0.5rem, 0.125rem + 0.78vw, 0.625rem);
         font-size: clamp(0.75rem, 0.375rem + 0.78vw, 0.875rem);
     }
 
@@ -102,13 +98,12 @@ $font-weight-bold: 700;
 }
 
 .news-item__title {
-    margin-top: 20px;
+    margin-top: 15px;
     color: #333;
     font-size: 20px;
     font-weight: $font-weight-bold;
 
     @include breakpoints.mq(tb) {
-        margin-top: clamp(0.625rem, -1.251rem + 3.91vw, 1.25rem);
         font-size: clamp(1rem, 0.25rem + 1.56vw, 1.25rem);
     }
 
@@ -131,7 +126,7 @@ $font-weight-bold: 700;
     margin-top: 60px;
 
     @include breakpoints.mq(tb) {
-        margin-top: 30px;
+        margin-top: 40px;
     }
 
     @include breakpoints.mq(sp) {
@@ -143,9 +138,9 @@ $font-weight-bold: 700;
     display: block;
     height: 50px;
 
-        &:not(:first-child) {
-                margin-left: 20px;
-            }
+    &:not(:first-child) {
+        margin-left: 20px;
+    }
 
     a {
         position: relative;
@@ -168,19 +163,19 @@ $font-weight-bold: 700;
         a {
             width: 30px;
             height: 30px;
-            font-size: 28px;
+            font-size: 24px;
         }
     }
 
     @include breakpoints.mq(sp) {
         &:not(:first-child) {
-                margin-left: 15px;
-            }
+            margin-left: 15px;
+        }
 
         a {
             width: 20px;
             height: 20px;
-            font-size: 20px;
+            font-size: 16px;
         }
     }
 }
@@ -214,8 +209,8 @@ $font-weight-bold: 700;
     }
 
     @include breakpoints.mq(tb) {
-        width: 33px;
-        margin-top: 6px;
+        height: 33px;
+        margin-top: 3px;
 
         a {
             width: 25px;
@@ -229,7 +224,8 @@ $font-weight-bold: 700;
     }
 
     @include breakpoints.mq(sp) {
-        margin-top: 6px;
+        height: 20px;
+        margin-top: 3px;
 
         a {
             width: 20px;

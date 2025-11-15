@@ -100,24 +100,20 @@ $font-weight-bold: 700;
         font-size: 12px;
     }
 }
-
 .works-item__title {
-    margin-top: 20px;
+    margin-top: 10px;
     color: #333;
     font-size: 20px;
     font-weight: $font-weight-bold;
 
     @include breakpoints.mq(tb) {
-        margin-top: clamp(0.625rem, -1.251rem + 3.91vw, 1.25rem);
         font-size: clamp(1rem, 0.25rem + 1.56vw, 1.25rem);
     }
 
     @include breakpoints.mq(sp) {
-        margin-top: 10px;
         font-size: 16px;
     }
 }
-
 .works__btn {
     margin-top: 60px;
 

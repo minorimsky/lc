@@ -54,6 +54,7 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1023.9px) {
   .about__contents {
+    justify-content: space-between;
     margin-top: 50px;
   }
 }
@@ -67,6 +68,11 @@
 
 .about__left {
   width: 34.1796875%;
+}
+@media screen and (min-width: 768px) and (max-width: 1023.9px) {
+  .about__left {
+    width: calc(40% - 10px);
+  }
 }
 @media screen and (max-width: 767.9px) {
   .about__left {
@@ -92,6 +98,11 @@
   width: 60.546875%;
   margin-left: auto;
 }
+@media screen and (min-width: 768px) and (max-width: 1023.9px) {
+  .about__right {
+    width: calc(60% - 10px);
+  }
+}
 @media screen and (max-width: 767.9px) {
   .about__right {
     width: 100%;
@@ -102,29 +113,29 @@
 }
 
 .about-message__title {
-  font-size: clamp(2rem, 1.385rem + 0.96vw, 2.25rem);
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.5;
 }
 @media screen and (min-width: 768px) and (max-width: 1023.9px) {
   .about-message__title {
-    font-size: 24px;
+    font-size: clamp(1.25rem, -0.251rem + 3.13vw, 1.75rem);
   }
 }
 @media screen and (max-width: 767.9px) {
   .about-message__title {
-    font-size: clamp(1.25rem, 1.071rem + 0.89vw, 1.5rem);
+    font-size: 18px;
   }
 }
 
 .about-message__text {
-  margin-top: clamp(1.563rem, -1.514rem + 4.81vw, 2.813rem);
-  font-size: clamp(1rem, 0.385rem + 0.96vw, 1.25rem);
+  margin-top: 40px;
+  font-size: 20px;
   line-height: 1.5;
 }
 @media screen and (min-width: 768px) and (max-width: 1023.9px) {
   .about-message__text {
-    margin-top: 25px;
+    margin-top: clamp(1.25rem, -0.626rem + 3.91vw, 1.875rem);
     font-size: 16px;
   }
 }
@@ -194,7 +205,7 @@
 @media screen and (min-width: 768px) and (max-width: 1023.9px) {
   .company-overview__lists {
     width: clamp(34.375rem, 15.618rem + 39.08vw, 40.625rem);
-    margin-top: 30px;
+    margin-top: 50px;
   }
 }
 @media screen and (max-width: 767.9px) {

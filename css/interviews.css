@@ -82,9 +82,14 @@
   line-height: 1.5;
   font-weight: 700;
 }
+@media screen and (min-width: 768px) and (max-width: 1023.9px) {
+  .interviews-item__title {
+    font-size: 16px;
+  }
+}
 @media screen and (max-width: 767.9px) {
   .interviews-item__title {
-    font-size: clamp(1rem, 0.821rem + 0.89vw, 1.25rem);
+    font-size: 16px;
   }
 }
 
@@ -103,9 +108,14 @@
   line-height: 1.5;
   font-weight: 700;
 }
+@media screen and (min-width: 768px) and (max-width: 1023.9px) {
+  .name {
+    font-size: 16px;
+  }
+}
 @media screen and (max-width: 767.9px) {
   .name {
-    font-size: clamp(1rem, 0.821rem + 0.89vw, 1.25rem);
+    font-size: 16px;
   }
 }
 
@@ -113,6 +123,16 @@
   margin-top: 5px;
   color: #0870C7;
   font-weight: bold;
+}
+@media screen and (min-width: 768px) and (max-width: 1023.9px) {
+  .position {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 767.9px) {
+  .position {
+    font-size: 12px;
+  }
 }
 
 .interviews__num {
@@ -122,7 +142,7 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1023.9px) {
   .interviews__num {
-    margin-top: 30px;
+    margin-top: 40px;
   }
 }
 @media screen and (max-width: 767.9px) {
@@ -157,7 +177,7 @@
   .interviews-num__item a {
     width: 30px;
     height: 30px;
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 767.9px) {
@@ -167,7 +187,7 @@
   .interviews-num__item a {
     width: 20px;
     height: 20px;
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -199,8 +219,8 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1023.9px) {
   .interviews-num__item-arrow {
-    width: 33px;
-    margin-top: 6px;
+    height: 33px;
+    margin-top: 3px;
   }
   .interviews-num__item-arrow a {
     width: 25px;
@@ -213,7 +233,8 @@
 }
 @media screen and (max-width: 767.9px) {
   .interviews-num__item-arrow {
-    margin-top: 6px;
+    height: 20px;
+    margin-top: 3px;
   }
   .interviews-num__item-arrow a {
     width: 20px;

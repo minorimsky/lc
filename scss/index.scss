@@ -13,11 +13,11 @@ $font-weight-bold: 700;
 .fv {
     position: relative;
     width: 100%;
-    height: 800px;
+    height: clamp(37.5rem, 6.731rem + 48.08vw, 50rem);
     z-index: 0;
 
     @include breakpoints.mq(tb) {
-        height: clamp(26.875rem, -42.772rem + 145.1vw, 50rem);
+        height: clamp(18.75rem, -18.765rem + 78.16vw, 31.25rem);
     }
 
     @include breakpoints.mq(sp) {
@@ -27,33 +27,42 @@ $font-weight-bold: 700;
 .fv-wrap {
     width: calc(100% - 80px * 2);
     margin: 0 auto;
-    padding-top: 350px;
+    padding-top: clamp(12.5rem, -10.577rem + 36.06vw, 21.875rem);
     padding-right: 80px;
     padding-left: 80px;
 
     @include breakpoints.mq(tb) {
-        padding-top: clamp(9.375rem, -28.272rem + 78.43vw, 21.875rem);
+        padding-top: clamp(6.25rem, -12.507rem + 39.08vw, 12.5rem);
     }
 
     @include breakpoints.mq(sp) {
         width: calc(100% - clamp(0.938rem, -1.971rem + 14.54vw, 5rem) * 2);
-        padding-top: clamp(8.125rem, 7.23rem + 4.47vw, 9.375rem);
+        padding-top: clamp(5rem, 4.107rem + 4.47vw, 6.25rem);
         padding-right: clamp(0.938rem, -1.971rem + 14.54vw, 5rem);
         padding-left: clamp(0.938rem, -1.971rem + 14.54vw, 5rem);
     }
 }
 .fv-wrap__title {
-    width: 532px;
+    width: clamp(23.75rem, 5.288rem + 28.85vw, 31.25rem);
     margin-right: auto;
-    padding: 30px;
+    padding: 60px 30px;
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-image: linear-gradient(-90deg, #4c9de0, #c3e4ff);
     color: #333;
 
     h1 {
-        font-size: 56px;
+        font-size: clamp(2.25rem, 0.404rem + 2.88vw, 3rem);
         font-weight: $font-weight-bold;
         line-height: 1.5;
+    }
+    .h1-deco {
+        display: inline-block;
+        padding: 0 8px;
+        background-color: #fff;
+
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
     }
 
     .fv-h1 {
@@ -63,36 +72,42 @@ $font-weight-bold: 700;
 
     p {
         display: inline-block;
-        margin-top: 50px;
+        margin-top: 40px;
         font-size: 24px;
         line-height: 1.5;
     }
 
     @include breakpoints.mq(tb) {
-        width: clamp(23.75rem, -4.862rem + 59.61vw, 33.25rem);
+        width: clamp(23.75rem, -4.862rem + 59.61vw, 26.25rem);
         padding: clamp(1.25rem, -0.632rem + 3.92vw, 1.875rem);
 
         h1 {
-            font-size: clamp(2.5rem, -0.512rem + 6.27vw, 3.5rem);
+            font-size: clamp(1.75rem, 1.135rem + 0.96vw, 2rem);
         }
 
         p {
-            margin-top: clamp(1.875rem, -1.89rem + 7.84vw, 3.125rem);
-            font-size: clamp(1rem, -0.506rem + 3.14vw, 1.5rem);
+            margin-top: 30px;
+            font-size: clamp(1rem, 0.25rem + 1.56vw, 1.25rem);
         }
     }
 
     @include breakpoints.mq(sp) {
         width: clamp(14.375rem, 7.664rem + 33.56vw, 23.75rem);
-        padding: clamp(0.625rem, 0.178rem + 2.24vw, 1.25rem);
+        padding:40px clamp(0.625rem, 0.178rem + 2.24vw, 1.25rem);
 
         h1 {
-            font-size: clamp(1.5rem, 0.784rem + 3.58vw, 2.5rem);
+            font-size: clamp(1.375rem, 0.75rem + 3.13vw, 2.25rem);
         }
 
+        .h1-deco {
+
+            &:not(:first-child) {
+                margin-top: 10px;
+            }
+        }
         p {
-            margin-top: 30px;
-            font-size: clamp(0.875rem, 0.786rem + 0.45vw, 1rem);
+            margin-top: 20px;
+            font-size: 12px;
         }
     }
 }
@@ -148,7 +163,7 @@ $font-weight-bold: 700;
 
     @include breakpoints.mq(sp) {
         display: block;
-        width: 80%;
+        max-width: 520px;
         margin-top: 20px;
     }
 }
@@ -160,7 +175,7 @@ $font-weight-bold: 700;
     }
 
     @include breakpoints.mq(tb) {
-        width: calc(50% - 10px);
+        width: calc(40% - 10px);
     }
 
     @include breakpoints.mq(sp) {
@@ -174,7 +189,7 @@ $font-weight-bold: 700;
     margin-left: auto;
 
     @include breakpoints.mq(tb) {
-        width: calc(50% - 10px);
+        width: calc(60% - 10px);
     }
 
     @include breakpoints.mq(sp) {
@@ -183,16 +198,16 @@ $font-weight-bold: 700;
     }
 }
 .about-message__title {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: $font-weight-bold;
     line-height: 1.5;
 
     @include breakpoints.mq(tb) {
-        font-size: clamp(1.5rem, -0.759rem + 4.71vw, 2.25rem);
+        font-size: clamp(1.25rem, -0.251rem + 3.13vw, 1.75rem);
     }
 
     @include breakpoints.mq(sp) {
-        font-size: clamp(1.25rem, 1.071rem + 0.89vw, 1.5rem);
+        font-size: 18px;
     }
 }
 .about-message__text {
@@ -201,8 +216,8 @@ $font-weight-bold: 700;
     line-height: 1.5;
 
     @include breakpoints.mq(tb) {
-        margin-top: clamp(1.25rem, -2.515rem + 7.84vw, 2.5rem);
-        font-size: clamp(1rem, 0.247rem + 1.57vw, 1.25rem);
+        margin-top: clamp(1.25rem, -0.626rem + 3.91vw, 1.875rem);
+        font-size: 16px;
     }
 
     @include breakpoints.mq(sp) {
@@ -218,7 +233,7 @@ $font-weight-bold: 700;
     }
 
     @include breakpoints.mq(sp) {
-        margin-top: 15px;
+        margin-top: 20px;
     }
 }
 .position {
@@ -239,6 +254,7 @@ $font-weight-bold: 700;
     font-weight: $font-weight-bold;
 
     @include breakpoints.mq(tb) {
+        margin-left: clamp(1.25rem, -4.945rem + 12.61vw, 3.125rem);
         font-size: clamp(1rem, -0.506rem + 3.14vw, 1.5rem);
     }
 
@@ -446,18 +462,16 @@ $font-weight-bold: 700;
     }
 }
 .works-item__title {
-    margin-top: 20px;
+    margin-top: 10px;
     color: #333;
     font-size: 20px;
     font-weight: $font-weight-bold;
 
     @include breakpoints.mq(tb) {
-        margin-top: clamp(0.625rem, -1.251rem + 3.91vw, 1.25rem);
         font-size: clamp(1rem, 0.25rem + 1.56vw, 1.25rem);
     }
 
     @include breakpoints.mq(sp) {
-        margin-top: 10px;
         font-size: 16px;
     }
 }

@@ -89,7 +89,7 @@ $font-weight-bold: 700;
 }
 
 .service-item__contents {
-    width: calc(100% - 450px - 60px);
+    width: 450px;
 
     @include breakpoints.mq(tb) {
         width: 100%;
@@ -151,8 +151,7 @@ $font-weight-bold: 700;
     }
 }
 .service-item__image {
-    width: 450px;
-    height: 300px;
+    width: calc(100% - 450px - 60px);    height: 300px;
     border-radius: 8px;
 
     img {

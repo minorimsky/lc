@@ -50,7 +50,7 @@
 }
 
 .service-item__contents {
-  width: calc(100% - 450px - 60px);
+  width: 450px;
 }
 @media screen and (min-width: 768px) and (max-width: 1023.9px) {
   .service-item__contents {
@@ -114,7 +114,7 @@
 }
 
 .service-item__image {
-  width: 450px;
+  width: calc(100% - 450px - 60px);
   height: 300px;
   border-radius: 8px;
 }

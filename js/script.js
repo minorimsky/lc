@@ -38,9 +38,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // Optional parameters
     loop: true,
     loopAdditionalSlides: 1,
-    speed: 2000,
+    speed: 1000,
     autoplay: {
-      delay: 7000,
+      delay: 2000,
       disableOnInteraction: false,
       waitForTransition: false,
     },

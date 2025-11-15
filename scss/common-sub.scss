@@ -48,27 +48,27 @@ a {
 
   @include breakpoints.mq(tb) {
     margin-top: 80px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   @include breakpoints.mq(sp) {
     margin-top: 60px;
-    padding-top: clamp(2.188rem, -2.502rem + 9.77vw, 3.75rem);
-    padding-bottom: clamp(2.188rem, -2.502rem + 9.77vw, 3.75rem);
+    padding-top: clamp(2.5rem, 1.607rem + 4.47vw, 3.75rem);
+    padding-bottom: clamp(2.5rem, 1.607rem + 4.47vw, 3.75rem);
   }
 }
 h2 {
   color: color.$accent-color;
-  font-size: clamp(2.5rem, -1.192rem + 5.77vw, 4rem);
+  font-size: 48px;
   font-weight: $font-weight-bold;
 
   @include breakpoints.mq(tb) {
-    font-size: 40px;
+    font-size: clamp(2rem, 1.25rem + 1.56vw, 2.25rem);
   }
 
   @include breakpoints.mq(sp) {
-    font-size: clamp(2rem, 0.499rem + 3.13vw, 2.5rem);
+    font-size: clamp(1.75rem, 1.571rem + 0.89vw, 2rem);
   }
 }
 .top__message {
@@ -180,24 +180,41 @@ h2 {
 }
 
 .section__title {
-  font-size: clamp(2.25rem, 0.404rem + 2.88vw, 3rem);
+  display: inline-block;
+  position: relative;
+  font-size: 40px;
+  font-weight: $font-weight-bold;
+
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 55%;
+    right: -45px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 5px;
+    background-color: color.$accent-color;
+    border-radius: 5px;
+  }
 
   @include breakpoints.mq(tb) {
-      font-size: clamp(1.75rem, 0.249rem + 3.13vw, 2.25rem);
+    font-size: clamp(1.75rem, -0.501rem + 4.69vw, 2.5rem);
 
-      &::after {
-        right: -35%;
-        width: clamp(1.875rem, -0.001rem + 3.91vw, 2.5rem);
-      }
+    &::after {
+      width: clamp(1.25rem, -0.626rem + 3.91vw, 1.875rem);
+      height: clamp(0.188rem, -0.188rem + 0.78vw, 0.313rem);
+      right: -34px;
+    }
   }
 
   @include breakpoints.mq(sp) {
-    font-size: clamp(1.25rem, 0.893rem + 1.79vw, 1.75rem);
+    font-size: clamp(1.25rem, 1.071rem + 0.89vw, 1.5rem);
 
     &::after {
-      right: -35%;
-      width: clamp(1.25rem, 0.803rem + 2.23vw, 1.875rem);
+      width: 20px;
       height: 3px;
+      right: -30px;
     }
   }
 }
