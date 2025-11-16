@@ -153,7 +153,7 @@
 
 .interviews-num__item {
   display: block;
-  height: 50px;
+  height: 20px;
 }
 .interviews-num__item:not(:first-child) {
   margin-left: 20px;
@@ -163,7 +163,7 @@
   display: block;
   text-align: center;
   color: #333;
-  font-size: 32px;
+  font-size: 20px;
   text-align: center;
   transition: all 0.3s;
 }
@@ -172,28 +172,28 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1023.9px) {
   .interviews-num__item {
-    height: 33px;
+    height: 20px;
   }
   .interviews-num__item a {
-    width: 30px;
-    height: 30px;
-    font-size: 24px;
+    height: 20px;
   }
 }
 @media screen and (max-width: 767.9px) {
+  .interviews-num__item {
+    height: 14px;
+  }
   .interviews-num__item:not(:first-child) {
     margin-left: 15px;
   }
   .interviews-num__item a {
-    width: 20px;
-    height: 20px;
-    font-size: 16px;
+    height: 14px;
+    font-size: 14px;
   }
 }
 
 .interviews-num__item-arrow {
-  height: 50px;
-  margin-top: 2px;
+  height: 20px;
+  margin-top: 6px;
 }
 .interviews-num__item-arrow:last-child {
   margin-left: 20px;
@@ -201,8 +201,8 @@
 .interviews-num__item-arrow a {
   position: relative;
   display: inline-block;
-  width: 30px;
-  height: 50px;
+  width: 20px;
+  height: 20px;
   opacity: 0.8;
   text-align: center;
 }
@@ -212,36 +212,27 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 @media screen and (min-width: 768px) and (max-width: 1023.9px) {
   .interviews-num__item-arrow {
-    height: 33px;
-    margin-top: 3px;
-  }
-  .interviews-num__item-arrow a {
-    width: 25px;
-    height: 33px;
-  }
-  .interviews-num__item-arrow a img {
-    width: 25px;
-    height: 25px;
+    margin-top: 6px;
   }
 }
 @media screen and (max-width: 767.9px) {
   .interviews-num__item-arrow {
-    height: 20px;
-    margin-top: 3px;
+    height: 14px;
+    margin-top: 0;
   }
   .interviews-num__item-arrow a {
-    width: 20px;
-    height: 20px;
+    width: 14px;
+    height: 14px;
   }
   .interviews-num__item-arrow a img {
-    width: 20px;
-    height: 20px;
+    width: 14px;
+    height: 14px;
   }
 }

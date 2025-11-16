@@ -134,17 +134,16 @@ $font-weight-bold: 700;
 }
 .about-message__text {
     margin-top: 40px;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5;
 
     @include breakpoints.mq(tb) {
         margin-top: clamp(1.25rem, -0.626rem + 3.91vw, 1.875rem);
-        font-size: 16px;
     }
 
     @include breakpoints.mq(sp) {
         margin-top: 20px;
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 .representative-name {
@@ -216,7 +215,6 @@ $font-weight-bold: 700;
     display: flex;
     padding-bottom: 20px;
     border-bottom: 1px solid color.$accent-color;
-    font-size: clamp(1rem, 0.385rem + 0.96vw, 1.25rem);
     line-height: 1.5;
 
     &:not(:first-child) {
@@ -237,7 +235,6 @@ $font-weight-bold: 700;
     }
 
     @include breakpoints.mq(tb) {
-        font-size: 16px;
 
         th {
             width: 70px;
@@ -253,7 +250,7 @@ $font-weight-bold: 700;
         display: block;
         margin-top: 20px;
         padding-bottom: 20px;
-        font-size: 16px;
+        font-size: 14px;
 
         th {
             display: inline-block;

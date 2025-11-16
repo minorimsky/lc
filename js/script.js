@@ -59,3 +59,20 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 });
+
+// fvスクロールでロゴ変更
+document.addEventListener("DOMContentLoaded", function () {
+  const headerLogo = document.querySelector(".header-wrap-logo");
+  const fv = document.querySelector(".fv");
+
+  // fvの下端位置を取得
+  const fvBottom = fv.offsetTop + fv.offsetHeight;
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > fvBottom) {
+      headerLogo.classList.add("scrolled");
+    } else {
+      headerLogo.classList.remove("scrolled");
+    }
+  });
+});

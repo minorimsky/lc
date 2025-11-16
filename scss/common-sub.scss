@@ -73,11 +73,9 @@ h2 {
 }
 .top__message {
   margin-top: clamp(1.25rem, -0.288rem + 2.4vw, 1.875rem);
-  font-size: clamp(1rem, -0.231rem + 1.92vw, 1.5rem);
 
   @include breakpoints.mq(tb) {
     margin-top: 20px;
-    font-size: 16px;
   }
 
   @include breakpoints.mq(sp) {

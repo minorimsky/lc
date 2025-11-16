@@ -9,6 +9,16 @@ $font-weight-regular: 400;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
 
+/*header*/
+.header-wrap-logo {
+    color: #fff;
+    transition: all 0.3s;
+
+    &.scrolled {
+        color: #333; // fvを過ぎたときの色
+    }
+}
+
 /*fv*/
 .fv {
     position: relative;
@@ -31,6 +41,10 @@ $font-weight-bold: 700;
     padding-top: clamp(12.5rem, 4.808rem + 12.02vw, 15.625rem);
     padding-right: 80px;
     padding-left: 80px;
+
+    @include breakpoints.mq(pc) {
+       max-width: calc(1440px - 80px * 2);
+    }
 
     @include breakpoints.mq(tb) {
         padding-top: 10%;
@@ -75,7 +89,6 @@ $font-weight-bold: 700;
         margin-top: 40px;
         padding: 10px;
         background-color: #fff;
-        font-size: 24px;
         line-height: 1.5;
     }
 
@@ -93,7 +106,6 @@ $font-weight-bold: 700;
 
         p {
             margin-top: clamp(1.563rem, -1.251rem + 5.86vw, 2.5rem);
-            font-size: clamp(1rem, -0.501rem + 3.13vw, 1.5rem);
         }
     }
 
@@ -254,10 +266,9 @@ $font-weight-bold: 700;
     }
 }
 .position {
-    font-size: 20px;
 
     @include breakpoints.mq(tb) {
-        font-size: clamp(1rem, 0.247rem + 1.57vw, 1.25rem);
+    
     }
 
     @include breakpoints.mq(sp) {
@@ -265,18 +276,15 @@ $font-weight-bold: 700;
     }
 }
 .name {
-    margin-top: 10px;
-    margin-left: 50px;
-    font-size: 24px;
+    margin-top: 5px;
     font-weight: $font-weight-bold;
 
     @include breakpoints.mq(tb) {
-        margin-left: clamp(1.25rem, -4.945rem + 12.61vw, 3.125rem);
-        font-size: clamp(1rem, -0.506rem + 3.14vw, 1.5rem);
+
     }
 
     @include breakpoints.mq(sp) {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 .about__btn {
@@ -450,7 +458,7 @@ $font-weight-bold: 700;
     }
 }
 .works-item__contents {
-    padding: 15px 10px;
+    padding: 10px 10px 15px;
 
     @include breakpoints.mq(tb) {
         padding: 15px;
@@ -462,34 +470,32 @@ $font-weight-bold: 700;
 }
 .works-item__tag {
     display: inline-block;
-    padding: 6px 10px;
+    padding: 4px 8px;
     background-color: color.$accent-color;
     border-radius: 8px;
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1;
 
     @include breakpoints.mq(tb) {
-        padding: clamp(0.313rem, 0.125rem + 0.39vw, 0.375rem) clamp(0.5rem, 0.125rem + 0.78vw, 0.625rem);
-        font-size: clamp(0.75rem, 0.375rem + 0.78vw, 0.875rem);
+
     }
 
     @include breakpoints.mq(sp) {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 .works-item__title {
     margin-top: 10px;
     color: #333;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: $font-weight-bold;
 
     @include breakpoints.mq(tb) {
-        font-size: clamp(1rem, 0.25rem + 1.56vw, 1.25rem);
     }
 
     @include breakpoints.mq(sp) {
-        font-size: 16px;
+
     }
 }
 .works__btn {

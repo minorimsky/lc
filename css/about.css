@@ -130,19 +130,18 @@
 
 .about-message__text {
   margin-top: 40px;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.5;
 }
 @media screen and (min-width: 768px) and (max-width: 1023.9px) {
   .about-message__text {
     margin-top: clamp(1.25rem, -0.626rem + 3.91vw, 1.875rem);
-    font-size: 16px;
   }
 }
 @media screen and (max-width: 767.9px) {
   .about-message__text {
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -229,7 +228,6 @@
   display: flex;
   padding-bottom: 20px;
   border-bottom: 1px solid #0870C7;
-  font-size: clamp(1rem, 0.385rem + 0.96vw, 1.25rem);
   line-height: 1.5;
 }
 .company-overview-list__item:not(:first-child) {
@@ -247,9 +245,6 @@
   word-break: keep-all;
 }
 @media screen and (min-width: 768px) and (max-width: 1023.9px) {
-  .company-overview-list__item {
-    font-size: 16px;
-  }
   .company-overview-list__item th {
     width: 70px;
     vertical-align: middle;
@@ -263,7 +258,7 @@
     display: block;
     margin-top: 20px;
     padding-bottom: 20px;
-    font-size: 16px;
+    font-size: 14px;
   }
   .company-overview-list__item th {
     display: inline-block;
