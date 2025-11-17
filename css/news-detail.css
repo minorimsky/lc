@@ -38,7 +38,7 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1023.9px) {
   .news-detail__title {
-    font-size: clamp(2rem, 0.499rem + 3.13vw, 2.5rem);
+    font-size: clamp(1.5rem, 1.451rem + 0.47vw, 1.75rem);
   }
 }
 @media screen and (max-width: 767.9px) {
@@ -103,7 +103,7 @@
 @media screen and (max-width: 767.9px) {
   .news-detail__text {
     margin-top: clamp(1.25rem, 0.803rem + 2.24vw, 1.875rem);
-    font-size: clamp(1rem, 0.821rem + 0.89vw, 1.25rem);
+    font-size: clamp(0.75rem, 0.571rem + 0.89vw, 1rem);
     line-height: clamp(1.5rem, 1.142rem + 1.79vw, 2rem);
   }
 }
@@ -156,7 +156,7 @@
   .news-detail-btn__pre,
   .news-detail-btn__center,
   .news-detail-btn__next {
-    font-size: clamp(1rem, 0.25rem + 1.56vw, 1.25rem);
+    font-size: clamp(0.75rem, 0.571rem + 0.89vw, 1rem);
   }
 }
 

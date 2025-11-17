@@ -76,3 +76,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// fvスクロールでハンバーガーメニューの色変更
+document.addEventListener("DOMContentLoaded", function () {
+  const headerLines = document.querySelectorAll(".h-open span");
+  const fv = document.querySelector(".fv");
+
+  const fvBottom = fv.offsetTop + fv.offsetHeight;
+
+  window.addEventListener("scroll", function () {
+    headerLines.forEach(span => {
+      if (window.scrollY > fvBottom) {
+        span.classList.add("scrolled");
+      } else {
+        span.classList.remove("scrolled");
+      }
+    });
+  });
+});

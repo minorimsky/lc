@@ -19,6 +19,18 @@ $font-weight-bold: 700;
     }
 }
 
+.h-open {
+
+    span {
+        background-color: #fff;
+        transition: all 0.3s;
+
+        &.scrolled {
+            background-color: color.$accent-color; // fvを過ぎたときの色
+        }
+    }
+}
+
 /*fv*/
 .fv {
     position: relative;
@@ -32,7 +44,7 @@ $font-weight-bold: 700;
     }
 
     @include breakpoints.mq(sp) {
-        height: clamp(20rem, 14.195rem + 29.02vw, 28.125rem);
+        height: clamp(25rem, 22.767rem + 11.16vw, 28.125rem);
     }
 }
 .fv-wrap {

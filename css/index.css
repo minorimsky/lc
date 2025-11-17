@@ -8,6 +8,14 @@
   color: #333;
 }
 
+.h-open span {
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.h-open span.scrolled {
+  background-color: #0870C7;
+}
+
 /*fv*/
 .fv {
   position: relative;
@@ -23,7 +31,7 @@
 }
 @media screen and (max-width: 767.9px) {
   .fv {
-    height: clamp(20rem, 14.195rem + 29.02vw, 28.125rem);
+    height: clamp(25rem, 22.767rem + 11.16vw, 28.125rem);
   }
 }
 

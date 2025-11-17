@@ -148,6 +148,7 @@ $font-weight-bold: 700;
     @include breakpoints.mq(sp) {
         width: 100%;
         margin-top: clamp(1.25rem, 0.803rem + 2.23vw, 1.875rem);
+        font-size: clamp(0.75rem, 0.661rem + 0.45vw, 0.875rem);
     }
 }
 .service-item__image {
@@ -250,6 +251,17 @@ $font-weight-bold: 700;
             background-size: cover;
         }
     }
+
+    @include breakpoints.mq(sp) {
+
+        p {
+            font-size: clamp(0.75rem, 0.661rem + 0.45vw, 0.875rem);
+
+            &::before {
+                margin-top: clamp(0.313rem, 0.179rem + 0.67vw, 0.5rem);
+            }
+        }
+    }
 }
 
 .service-item__flow {
@@ -306,6 +318,16 @@ $font-weight-bold: 700;
                 margin-right: 5px;
                 color: color.$accent-color;
                 font-weight: $font-weight-bold;                }
+        }
+    }
+
+    @include breakpoints.mq(sp) {
+
+        ol {
+
+            li {
+                font-size: clamp(0.75rem, 0.661rem + 0.45vw, 0.875rem);
+            }
         }
     }
 }

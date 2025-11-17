@@ -142,7 +142,6 @@ $font-weight-bold: 700;
     margin-top: 30px;
 
     @include breakpoints.mq(tb) {
-        width: 400px;
         margin-top: 40px;
         margin-right: auto;
         margin-left: auto;
@@ -163,7 +162,7 @@ $font-weight-bold: 700;
 }
 .interviews-detail__text {
     margin-top: 30px;
-    line-height: 32px;
+    line-height: 1.5;
 
     @include breakpoints.mq(tb) {
         margin-top: 25px;
@@ -171,8 +170,7 @@ $font-weight-bold: 700;
 
     @include breakpoints.mq(sp) {
         margin-top: clamp(1.25rem, 0.803rem + 2.24vw, 1.875rem);
-        font-size: clamp(1rem, 0.821rem + 0.89vw, 1.25rem);
-        line-height: clamp(1.5rem, 1.142rem + 1.79vw, 2rem);
+        font-size: clamp(0.75rem, 0.571rem + 0.89vw, 1rem);
     }
 
     p {

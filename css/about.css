@@ -259,15 +259,16 @@
     margin-top: 20px;
     padding-bottom: 20px;
     font-size: 14px;
+    text-align: left;
   }
   .company-overview-list__item th {
-    display: inline-block;
+    display: block;
     width: 100%;
     margin-left: 0;
     vertical-align: middle;
   }
   .company-overview-list__item td {
-    display: inline-block;
+    display: block;
     width: auto;
     margin-top: 10px;
     margin-left: auto;

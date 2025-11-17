@@ -251,16 +251,17 @@ $font-weight-bold: 700;
         margin-top: 20px;
         padding-bottom: 20px;
         font-size: 14px;
+        text-align: left;
 
         th {
-            display: inline-block;
+            display: block;
             width: 100%;
             margin-left: 0;
             vertical-align: middle;
         }
 
         td {
-            display: inline-block;
+            display: block;
             width: auto;
             margin-top: 10px;
             margin-left: auto;

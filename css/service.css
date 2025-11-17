@@ -110,6 +110,7 @@
   .service-item__text {
     width: 100%;
     margin-top: clamp(1.25rem, 0.803rem + 2.23vw, 1.875rem);
+    font-size: clamp(0.75rem, 0.661rem + 0.45vw, 0.875rem);
   }
 }
 
@@ -222,6 +223,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media screen and (max-width: 767.9px) {
+  .service-item-desc__text p {
+    font-size: clamp(0.75rem, 0.661rem + 0.45vw, 0.875rem);
+  }
+  .service-item-desc__text p::before {
+    margin-top: clamp(0.313rem, 0.179rem + 0.67vw, 0.5rem);
+  }
+}
 
 .service-item__flow {
   width: calc(50% - 30px);
@@ -279,6 +288,11 @@
   margin-right: 5px;
   color: #0870C7;
   font-weight: 700;
+}
+@media screen and (max-width: 767.9px) {
+  .service-item-flow__text ol li {
+    font-size: clamp(0.75rem, 0.661rem + 0.45vw, 0.875rem);
+  }
 }
 
 .service__btn {
